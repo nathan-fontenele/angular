@@ -1,0 +1,28 @@
+<table>
+    <thead>
+        <tr>
+            <th>Nomes</th>
+            <th>Idades</th>
+            <th>Index</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pessoa of pessoas; index as indice">
+            <td>
+                {{pessoa.nome}}
+            </td>
+            <td>
+                {{pessoa.idade}}
+            </td>
+            <td>
+                {{indice}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<ul>
+    <li *ngFor="let n of nomes">{{n}}</li>
+</ul>
